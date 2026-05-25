@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Городской музей</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Городской музей</div>
+    <nav class="nav">
+      <a href="#exhibitions">Выставки</a>
+      <a href="#tickets">Билеты</a>
+      <a href="#excursions">Экскурсии</a>
+      <a href="#tour">Онлайн-тур</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Добро пожаловать в городской музей</h1>
+      <p>Место, где история, искусство и культура становятся ближе каждому посетителю.</p>
+      <a class="btn" href="#tickets">Купить билет</a>
+    </div>
+  </section>
+
+  <main>
+    <section id="exhibitions" class="section">
+      <h2>Выставки</h2>
+
+      <div class="cards">
+        <article class="card exhibition-card">
+          <div class="text-frame">
+            <h3>История города</h3>
+            <p>Экспозиция о развитии города, важных событиях и людях, которые повлияли на его культуру.</p>
+          </div>
+          <img src="exhibition-1.png" alt="Выставочный зал с экспонатами">
+        </article>
+
+        <article class="card exhibition-card">
+          <div class="text-frame">
+            <h3>Искусство XX века</h3>
+            <p>Картины, скульптуры и редкие архивные материалы художников прошлого столетия.</p>
+          </div>
+          <img src="exhibition-2.jpg" alt="Музейные витрины с экспонатами">
+        </article>
+
+        <article class="card exhibition-card">
+          <div class="text-frame">
+            <h3>Археологические находки</h3>
+            <p>Предметы быта, украшения и исторические артефакты, найденные в регионе.</p>
+          </div>
+          <img src="exhibition-3.jpg" alt="Современный музейный зал">
+        </article>
+      </div>
+    </section>
+
+    <section id="tickets" class="section">
+      <h2>Билеты</h2>
+      <div class="ticket-box">
+        <p><b>Взрослый билет:</b> 400 ₽</p>
+        <p><b>Студенческий билет:</b> 250 ₽</p>
+        <p><b>Детский билет:</b> 150 ₽</p>
+        <form class="form">
+          <input type="text" placeholder="Ваше имя" required>
+          <input type="email" placeholder="Email" required>
+          <select required>
+            <option value="">Выберите тип билета</option>
+            <option>Взрослый</option>
+            <option>Студенческий</option>
+            <option>Детский</option>
+          </select>
+          <button type="submit">Оформить билет</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="excursions" class="section">
+      <h2>Экскурсии</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Обзорная экскурсия</h3>
+          <p>Знакомство с главными залами музея. Длительность — 60 минут.</p>
+        </article>
+        <article class="card">
+          <h3>Школьная экскурсия</h3>
+          <p>Познавательная программа для учеников с интерактивными заданиями.</p>
+        </article>
+        <article class="card">
+          <h3>Вечерняя экскурсия</h3>
+          <p>Особая атмосфера музея после закрытия основной экспозиции.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="tour" class="section">
+      <h2>Онлайн-тур</h2>
+      <div class="tour-box">
+        <p>Посетите музей не выходя из дома. Онлайн-тур позволяет посмотреть основные залы и экспонаты в виртуальном формате.</p>
+        <button onclick="startTour()">Запустить онлайн-тур</button>
+        <p id="tourMessage"></p>
+      </div>
+    </section>
+
+    <section id="contacts" class="section">
+      <h2>Контакты</h2>
+      <div class="contacts">
+        <p><b>Адрес:</b> ул. Центральная, 15</p>
+        <p><b>Телефон:</b> +7 (900) 123-45-67</p>
+        <p><b>Email:</b> museum@example.ru</p>
+        <p><b>Время работы:</b> 10:00–19:00, выходной — понедельник</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Городской музей. Учебный проект.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
